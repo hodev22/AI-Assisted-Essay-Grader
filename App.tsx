@@ -17,7 +17,7 @@ function App() {
       {!isLoggedIn ? (
         <LoginScreen onLoginSuccess={() => setIsLoggedIn(true)} />
       ) : (
-        <GradingScreen />
+        <GradingScreen onLogout={() => setIsLoggedIn(false)} />
       )}
       
     </div>
